@@ -2,19 +2,27 @@
 
 import { lazy } from "react";
 
-const Leads = lazy(() => import("../pages/protected/Leads"));
-const ProfileSettings = lazy(() =>
-  import("../pages/protected/ProfileSettings")
-);
+const Patient = lazy(() => import("../pages/protected/Patient"));
+const Doctor = lazy(() => import("../pages/protected/Doctor"));
+const Department = lazy(() => import("../pages/protected/Department"));
+const Profile = lazy(() => import("../pages/protected/Profile"));
 
 const routes = [
   {
-    path: "/leads",
-    component: Leads,
+    path: "/patient",
+    component: Patient,
   },
   {
-    path: "/settings-profile",
-    component: ProfileSettings,
+    path: "/doctor",
+    component: Doctor,
+  },
+  {
+    path: "/department",
+    component: Department,
+  },
+  {
+    path: "/profile",
+    component: Profile,
   },
 ];
 
