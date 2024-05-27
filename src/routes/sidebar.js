@@ -8,13 +8,23 @@ const submenuIconClasses = `h-5 w-5`;
 
 const routes = [
   {
-    path: "/app/leads", // url
+    path: "/app/patient", // url
     icon: <InboxArrowDownIcon className={iconClasses} />, // icon component
-    name: "Leads", // name that appear in Sidebar
+    name: "Patient", // name that appear in Sidebar
+  },
+  {
+    path: "/app/doctor", // url
+    icon: <InboxArrowDownIcon className={iconClasses} />, // icon component
+    name: "Doctor", // name that appear in Sidebar
+  },
+  {
+    path: "/app/department", // url
+    icon: <InboxArrowDownIcon className={iconClasses} />, // icon component
+    name: "Department", // name that appear in Sidebar
   },
 
   {
-    path: "/app/settings-profile", //url
+    path: "/app/profile", //url
     icon: <UserIcon className={submenuIconClasses} />, // icon component
     name: "Profile", // name that appear in Sidebar
   },
