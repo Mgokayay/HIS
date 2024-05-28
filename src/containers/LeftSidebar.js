@@ -22,14 +22,7 @@ function LeftSidebar() {
         </button>
 
         <li className="mb-2 font-semibold text-xl">
-          <Link to={"/app/welcome"}>
-            <img
-              className="mask mask-squircle w-10"
-              src="/logo192.png"
-              alt="DashWind Logo"
-            />
-            DashWind
-          </Link>{" "}
+          <Link to={"/app/patient"}>HIS</Link>{" "}
         </li>
         {routes.map((route, k) => {
           return (
