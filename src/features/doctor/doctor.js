@@ -26,7 +26,7 @@ const Doctor = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="w-[200px] py-2" onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label>Name</label>
         <input
@@ -36,7 +36,7 @@ const Doctor = () => {
         {errors.name && <p>{errors.name.message}</p>}
       </div>
       <div>
-        <label>Name</label>
+        <label>Department</label>
         <input
           id="department"
           {...register("department", { required: "this field is required" })}
@@ -44,7 +44,12 @@ const Doctor = () => {
         {errors.department && <p>{errors.department.message}</p>}
       </div>
 
-      <button type="submit">save</button>
+      <button
+        className="bg-black hover:bg-green-700 hover:scale-105 border mt-4 p-2"
+        type="submit"
+      >
+        Save
+      </button>
     </form>
   );
 };
