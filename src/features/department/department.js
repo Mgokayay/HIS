@@ -20,7 +20,7 @@ const Department = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="w-[200px] py-2" onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label>Name</label>
         <input
@@ -30,7 +30,12 @@ const Department = () => {
         {errors.name && <p>{errors.name.message}</p>}
       </div>
 
-      <button type="submit">save</button>
+      <button
+        className="bg-black hover:bg-green-700 hover:scale-105 border mt-4 p-2"
+        type="submit"
+      >
+        save
+      </button>
     </form>
   );
 };
